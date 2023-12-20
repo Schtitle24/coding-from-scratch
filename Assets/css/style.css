@@ -61,7 +61,7 @@ span {
   height: 50%;
 }
 .nav-pop {
-  /* display: none; */
+  display: flex;
   flex-wrap: wrap;
   margin: 0;
   margin-right:0;
@@ -99,7 +99,7 @@ span {
   margin: 20px;
   height: 90px;
   padding-bottom: 20;
-  position: fixed;
+  /* position: fixed; */
   background-color: var(--background);
 }
 
@@ -128,9 +128,20 @@ span {
   flex-wrap: nowrap;
 }
 
-#project-2-img, #project-1-image {
+#project-1-img {
+  /* flex-shrink: 1; */
+
+}
+
+#project-2-img {
  display: flex;
- height: 10%;
+ max-width: 85%;
+ /* flex-shrink: 1; */
+}
+
+#project-3-img {
+  max-width: 27%;
+  /* flex-shrink: 1; */
   
 }
 #project-1-desc, #project-3-desc {
@@ -152,3 +163,20 @@ font-size: 20px;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 992px) {
+  .projects {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .projects {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projects {
+    width: 15%;
+  }
+}
