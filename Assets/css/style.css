@@ -1,0 +1,154 @@
+:root {
+  --background: aqua;
+  --nav-bar: blueviolet;
+}
+
+*{
+ 
+}
+
+header {
+  display: flex;
+  flex-flow: row-reverse;
+  width: 100%;
+  background-color: blueviolet;
+  border-bottom: 5px dashed black;
+ height: 150px;
+
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aqua;
+}
+
+li {
+  margin-right: 40px;
+  font-size: 41px;
+ 
+}
+
+ul {
+  display: flex;
+}
+
+main { 
+  display: flex;
+  justify-content: left;
+  font-size: 95px;
+  font-weight: 200;
+  padding-top: 150px;
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 75px;
+  justify-content: center;
+  padding: 100px;
+  padding-bottom: 30px;
+  
+
+}
+
+span {
+  border-bottom: 3px dashed black;
+}
+.projects p {
+  max-width: 50%;
+  text-align: center;
+  height: 50%;
+}
+.nav-pop {
+  /* display: none; */
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right:0;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.besides {
+  justify-content: space-around;
+}
+
+.projects { 
+  margin: 50px;
+  max-width: 100%;
+  height: auto;
+
+}
+
+.b-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 15px;
+}
+.b-nav li{
+  display: flex;
+  font-size: 34px;
+}
+
+#avatar { 
+  justify-content: flex-end;
+  width: 90px;
+  border-radius: 50%;
+  border: 0;
+  margin: 20px;
+  height: 90px;
+  padding-bottom: 20;
+  position: fixed;
+  background-color: var(--background);
+}
+
+
+
+/* #avatar:hover .nav-pop {
+  display: block;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: 100px;
+  margin-top: 50px;
+  justify-content: space-between;
+} */
+
+#about {
+  display: flex;
+  font-size: 26px;
+ justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#name {
+  margin-left: 5%;
+
+  margin-top: 35px;
+  flex-wrap: nowrap;
+}
+
+#project-2-img, #project-1-image {
+ display: flex;
+ height: 10%;
+  
+}
+#project-1-desc, #project-3-desc {
+float: right;
+flex-wrap: nowrap;
+padding: 150px;
+font-size: 20px;
+}
+#project-2-desc {
+ flex-direction: row-reverse;
+justify-content: center;
+align-items: center;
+padding: 150px;
+font-size: 20px;
+}
+#project-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
