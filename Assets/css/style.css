@@ -2,11 +2,6 @@
   --background: aqua;
   --nav-bar: blueviolet;
 }
-
-*{
- 
-}
-
 html {
   scroll-behavior: smooth; 
 }
@@ -27,8 +22,15 @@ body {
   background-color: aqua;
 }
 
-li {
+article {
+  display: flex;
+}
+
+li:not(:last-of-type) {
   margin-right: 40px;
+}
+
+Li {
   font-size: 41px;
  
 }
@@ -38,8 +40,6 @@ ul {
 }
 
 main { 
-  display: flex;
-  justify-content: left;
   font-size: 95px;
   font-weight: 200;
   padding-top: 150px;
@@ -60,9 +60,7 @@ span {
   border-bottom: 3px dashed black;
 }
 .projects p {
-  max-width: 50%;
-  text-align: center;
-  height: 50%;
+  max-width: 50%
 }
 .nav-pop {
   display: flex;
@@ -81,7 +79,7 @@ span {
   margin: 50px;
   max-width: 100%;
   height: auto;
-
+  
 }
 
 .b-nav {
@@ -95,6 +93,23 @@ span {
   font-size: 34px;
 }
 
+.project-1 {
+  display:flex
+}
+
+.project-2 {
+  display: flex;
+  margin-top: 20px;
+}
+
+.project-3 {
+  display: flex;
+  margin-top: 20px;
+}
+
+.project-2 a {
+  order: 2;
+}
 #avatar { 
   justify-content: flex-end;
   width: 90px;
@@ -121,36 +136,44 @@ span {
 #about {
   display: flex;
   font-size: 26px;
+  text-align: center;
  justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
 }
 #name {
   margin-left: 5%;
-
+  text-align: center;
   margin-top: 35px;
   flex-wrap: nowrap;
 }
 
 #project-1-img {
-  /* flex-shrink: 1; */
+  display: flex;
+  flex: auto;
 
 }
 
 #project-2-img {
- display: flex;
- max-width: 85%;
+  display: flex;
+  flex: auto;
+
+
  /* flex-shrink: 1; */
 }
 
 #project-3-img {
-  max-width: 27%;
-  /* flex-shrink: 1; */
+  display: flex;
+  flex: auto;
+  text-align: center;
+  justify-content: center;
   
 }
 #project-1-desc, #project-3-desc {
-float: right;
+/* float: right; */
 flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
 padding: 150px;
 font-size: 20px;
 }
@@ -161,26 +184,40 @@ align-items: center;
 padding: 150px;
 font-size: 20px;
 }
-#project-2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
+
 
 @media screen and (max-width: 992px) {
-  .projects {
-    width: 50%;
+   
   }
-}
 
+/* changing flex direction to column so that text shows beneath images */
 @media screen and (max-width: 762px) {
-  .projects {
-    width: 30%;
+  .project-1 { 
+    flex-direction: column;
+    text-align: center;
+  }
+  .project-2 { 
+    flex-direction: column-reverse;
+  }
+  .project-3 { 
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .projects  {
-    width: 100vw;
-  }
+  .project-1  {
+    flex-direction: column;
+    padding-right: 15px;
+    align-items: center;
+  } 
+  .project-2  {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  } 
+  .project-3  {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  } 
 }
