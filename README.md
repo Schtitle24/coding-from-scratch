@@ -21,9 +21,6 @@ Languages used :: HTML // CSS
 Deployed Application :: https://schtitle24.github.io/coding-from-scratch/
 Repository Link :: https://github.com/Schtitle24/coding-from-scratch.git
 
-Wireframe
-![Wireframe-challenge-2](https://github.com/Schtitle24/coding-from-scratch/assets/153530625/a90c48e6-646e-4a01-8761-fd76a0cd1409)
-
 
 Deployed Application
 ![Challenge-02](https://github.com/Schtitle24/coding-from-scratch/assets/153530625/35f7289a-fa9e-4d44-bd50-52bcca406926)
